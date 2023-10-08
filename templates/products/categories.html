@@ -1,0 +1,9 @@
+{% extends 'layouts/index.html'%}
+
+{% block content %}
+    <div class="Categories">
+       {% for category in Categories %}
+            <h1>{{ category.title }}</h1>
+        {% endfor %}
+    </div>
+{% endblock %}
